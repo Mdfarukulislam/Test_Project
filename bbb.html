@@ -1,0 +1,48 @@
+
+
+<html>
+<head>
+  <title> Assignment #2 LR></title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+ <h1>Age Calculator</h1>
+
+ <form id="agecalculator" >
+   <strong>Enter your name:<strong>
+ <input type="text" name="name" id="name" value="">
+ <br>
+   <strong>Date of Birth:<strong>
+ <input type="year" name="fyear" id="fyear" value=""> (only year)
+ <br>
+ <strong>Present Date :</strong>
+ <input type="year" name="pyear" id="pyear" value=""> (only year)
+ <br>
+
+   <p id="demo"></p>
+
+ </form>
+
+   <button type="button" value="Get my age" onclick="age()">Search</button>
+
+ <script>
+
+
+   function age(){
+     var uName=document.forms["agecalculator"]["name"].value;
+     var fName=document.forms["agecalculator"]["fyear"].value;
+     var sName=document.forms["agecalculator"]["pyear"].value;
+     var zname= sName-fName;
+     var oname= zname++ ;
+
+
+
+
+document.getElementById("demo").innerHTML= " I am " + uName + " . I was bron in " + fName + " & In " + sName + " , I am going to be " + zname + " or " + oname + " years old. " ;
+   }
+
+
+ </script>
+</body>
+
+</html>
